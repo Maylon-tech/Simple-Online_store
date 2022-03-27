@@ -1,0 +1,216 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: azure;
+    background-color: rgba(3, 3, 3, 0.89);
+    color: #fff;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    max-width: 1360px;
+    min-width: 450px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+}
+.header .content-left {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header .logo {
+    margin-left: 20px;
+    font-size: 30px;
+    position: relative;
+}
+.header .logo h1 {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.header .logo h1::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 4px;
+    background-color: #2c4fad;
+    bottom: 2px;
+    right: 0px;
+}
+ .header .navbar {
+    margin-left: 20px;
+    position: relative;
+ }
+.header .navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #454445;
+    margin: 0px 10px;
+    position: relative;
+    transition: all .4s ease;
+    padding: 8px;
+    color: azure;
+}
+.header .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #40829c;
+    transition: all .4s ease;
+}
+.header .navbar a:hover::after{
+   width: 100%;    
+}
+.header .cart-profile a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(67, 67, 189);
+    padding: 3px;
+    background: #40829c;
+}
+.header .cart-profile {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+.header .cart-profile i {
+    font-size: 22px;
+    color: #b8b5b8;
+    margin-right: 20px;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.container .content-img {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: fit-content;
+}
+.container .content-img .main-img {
+    width: fit-content;
+    width: 100%;
+}
+.container .content-img .main-img > img {
+    border-radius: 8px;
+    width: 100%;
+    height: 500px;
+}
+
+.container .content-img .select-img {
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.container .content-img .select-img > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .4s;
+}
+.container .content-img .select-img > img:focus:hover {
+    transform: scale(0.8);
+}
+
+
+.container .content-text_btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 15px 0px;
+    background: #fff;
+    width: 35%;
+}
+.container .content-text_btn span {
+    color: rgb(228, 87, 87);
+    font-size: 17px;
+}
+.container .content-text_btn h1 {
+    font-size: 25px;
+    margin: 20px 0;
+    color: black;
+    font-style: italic;
+}
+.container .content-text_btn p {
+    font-size: 18px;
+    color: rgb(95, 93, 93);
+    line-height: 25px;
+}
+.container .content-text_btn .price {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(10, 12, 10);
+    margin-top: 25px;
+}
+.container .content-text_btn .buttons {
+    margin-top: 55px;
+    display: flex;
+    width: 100%;
+}
+.container .content-text_btn .buttons .up-down {
+    width: 30%;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #dddadd;
+}
+.container .content-text_btn .buttons .minus {
+    font-size: 30px;
+    width: 100%; 
+    color: blue;
+}
+.container .content-text_btn .buttons .count {
+    font-size: 30px;
+    width: 100%; 
+    color: blue;
+}
+.container .content-text_btn .buttons .plus {
+    font-size: 30px;
+    width: 100%; 
+    color: blue;
+}
+.container .content-text_btn .buttons #botao {
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #141414;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.container .content-text_btn .buttons #botao .carty {
+    margin-right: 5px;
+}
